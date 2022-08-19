@@ -1,0 +1,17 @@
+[
+{
+    "item-id": "1",
+    "name": "Torch",
+    "price": "20"
+},
+{
+    "item-id": 2,
+    "name": "Tent",
+    "price": "200"
+},
+{
+    "item-id": 3,
+    "name": "Stove",
+    "price": "50"
+}
+]

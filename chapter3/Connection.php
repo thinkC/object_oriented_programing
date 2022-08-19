@@ -35,6 +35,15 @@ class Connection
         return self::$count;
     }
 
+    // The string representation of an object
+    //__toString() method allows a class to decide how it will
+    //react when it is treated lie a string for example, what echo
+    //$obj; will print.
+    public function __toString()
+    {
+        return "Conference ID: {$this->conferenceId} <br> Connection ID: {$this->connectionId}";
+    }
+
 public function setConnectionId($ipAddress){
     if (filter_var($ipAddress, FILTER_VALIDATE_IP)) {
         $this->connectionId = $ipAddress . '_'. self::$count;

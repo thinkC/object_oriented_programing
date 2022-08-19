@@ -14,11 +14,16 @@
 require "Connection.php";
 
 $connection1 = new Connection();
-$connection2 = new Connection();
-unset($connection2);
+// $connection2 = new Connection();
+// unset($connection2);
 // print_r($connection2);
+// $connection1->setConnectionId("test.0.1"); //returns Not a valid ip address
+$connection1->setConnectionId("127.0.0.1");
+print $connection1;
 ?>
 
 <p><?php echo "the number of connection is " . $connection1->getCount() ?> </p>
+<p><?php echo  "The conference ID is ". $connection1->conferenceId ?></p>
+<p><?php echo "The connection ID is ". $connection1->connectionId  ?></p>
 </body>
 </html>
